@@ -1,4 +1,5 @@
 ﻿using System;
+using Zoo.ZooAnimals;
 
 namespace Zoo
 {
@@ -6,7 +7,10 @@ namespace Zoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Dolphin dollFin = new Dolphin();
+            dollFin.CanSwim(true);
+            dollFin.LivesInOcean();
+            dollFin.IsZooAnimal();
         }
     }
 }
