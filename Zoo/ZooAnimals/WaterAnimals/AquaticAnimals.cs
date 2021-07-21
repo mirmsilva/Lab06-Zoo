@@ -6,23 +6,30 @@ using System.Threading.Tasks;
 
 namespace Zoo.ZooAnimals
 {
-    abstract class AquaticAnimals : ZooAnimals
+    //this is still not an object (parent)
+    public abstract class AquaticAnimals : ZooAnimals
     {
-        public override string Color { get; set; } = "blue";
+        //Inherited from Zoo Animals
+        public override string Color { get; set; } = "blue"
+        public override string[] Diet { get; set;} = {"plankton", "seaweed"}
 
-        public virtual void CanSwim(bool swims)
+        //Don't need to do anything yet will pass on to turtle
+        public override int Legs { get; set; }
+
+        public override void TheySleep()
         {
-            bool canSwim = swims;
-            if (canSwim == false)
-            {
-                Console.WriteLine("this water animal does not swim");
-            }
-            else
-            {
-                Console.WriteLine("this water animal can swim!");
-            }
+            Console.WriteLine("Aquatic Animals sleep");
         }
-        public abstract void LivesInOcean();
+
+        //Some can live on land
+        public virtual void CanLiveOnLand();
+
+        //They all live in or near water
+        public abstract string TypeOfWater { get; set; }
+
+        //Some lay eggs
+        public virtual void LaysEggs();
+
 
     }
    

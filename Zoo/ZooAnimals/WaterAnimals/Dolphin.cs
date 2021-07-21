@@ -6,21 +6,11 @@ using System.Threading.Tasks;
 
 namespace Zoo.ZooAnimals
 {
-    class Dolphin : AquaticAnimals
+    public class Dolphin : AquaticAnimals
     {
+        //You can override abstracts at different levels
+        public override string Color { get; set; }= "grey"
 
-        public override void CanSwim(bool swims)
-        {
-            base.CanSwim(swims);
-        }
-
-        public override void LivesInOcean()
-        {
-            Console.WriteLine("Dolphins do live in the ocean!");
-        }
-        public override void IsZooAnimal()
-        {
-            Console.WriteLine("Dolphins are Zoo Animals");
-        }
+        public override string  TypeOfWater { get; set; } = "Salty Ocean Water"
     }
 }
