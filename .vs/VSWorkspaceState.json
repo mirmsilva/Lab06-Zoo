@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Zoo",
+    "\\Zoo\\ZooAnimals",
+    "\\Zoo\\ZooAnimals\\Animals",
+    "\\Zoo\\ZooAnimals\\Aviary",
+    "\\Zoo\\ZooAnimals\\WaterAnimals"
   ],
-  "SelectedNode": "\\Zoo.sln",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": true
 }

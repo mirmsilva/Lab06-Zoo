@@ -7,15 +7,28 @@ using System.Threading.Tasks;
 namespace Zoo.ZooAnimals.Aviary
 
 {
-    public class Turkey : Bird
+    public class Turkey : Bird, IHabit
     {
-        public override string Color { get; set;} = "brown"
+        public override string Color { get; set; } = "brown";
 
-        public override LaysEggs()
+        public void Fast()
         {
-            Console.WriteLine("Turkeys Lay Eggs");
+            Console.WriteLine("Turkeys are fast during Thanksgiving Time");
         }
 
-        
+        void IHabit.Diet()
+        {
+            Console.WriteLine("We eat worms!");
+        }
+
+        public void Nocturnal()
+        {
+            Console.WriteLine("We Sleep at night");
+        }
+
+        public override void LaysEggs()
+        {
+            Console.WriteLine("We lay big eggs!");
+        }
     }
 }
