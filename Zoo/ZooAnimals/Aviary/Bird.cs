@@ -8,17 +8,20 @@ namespace Zoo.ZooAnimals
 {
     public abstract class Bird : ZooAnimals
     {
-        public override string Color { get; set; } = "green"
-        public override string[] Diet { get; set;} = {"worms", "bread crumbs"}
+        public override string Color { get; set; } = "green";
+        public override string[] Diet { get; set; } = { "worms", "bread crumbs" };
 
-        public override int Legs { get; set; } = 2
+        public override int Legs { get; set; } = 2;
 
         public override void TheySleep()
         {
             Console.WriteLine("Birds sleep");
         }
 
-        public virtual void Flies();
+        public virtual void Flies()
+        {
+            Console.WriteLine( "FLYYYYYYYY");
+        }
 
         public abstract void LaysEggs();
 

@@ -8,9 +8,6 @@ namespace Zoo
         static void Main(string[] args)
         {
             Dolphin dollFin = new Dolphin();
-            dollFin.CanSwim(true);
-            dollFin.LivesInOcean();
-            dollFin.IsZooAnimal();
         }
     }
 }
